@@ -1,0 +1,1 @@
+This is the layout code for the main program for the quiz application using XML programming language.
