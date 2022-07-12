@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".historyOne"
+    android:background="@color/lightblue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:padding="15dp"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="History"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/lightblue"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="15dp"
+        android:background="@color/blue">
+
+        <TextView
+            android:id="@+id/questionNbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questions : 1/n"
+            android:textColor="@color/lightblue"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score : 0"
+            android:textColor="@color/lightblue"
+            android:layout_below="@id/questionNbr"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/score"/>
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="59 sec"
+            android:textColor="@color/lightblue"
+            android:textSize="38dp" />
+
+        <TextView
+            android:id="@+id/history_ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score"
+            android:layout_marginTop="42dp"
+            android:text="Question will be here"
+            android:textAlignment="center"
+            android:textColor="@color/lightblue"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:padding="35dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:textSize="20dp"/>
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_bg"
+                android:text="Next" />
+
+            <Button
+                android:id="@+id/btnShr"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_bg"
+                android:text="Share" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".frontPage"
+    android:padding="20dp"
+    android:background="@color/lightblue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:onClick="math"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/yellow"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maths"
+                        android:textSize="30dp"
+                        android:textColor="@color/lightblue"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:onClick="science"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tosca"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Science"
+                        android:textColor="@color/lightblue"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:onClick="english"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/pink"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="English"
+                        android:textColor="@color/lightblue"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="60dp"
+                        android:id="@+id/quesVid"
+                        android:onClick="getVideo"
+                        android:text="Question Video"
+                        android:textColor="@color/blue"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:onClick="history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue_2"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:text="History"
+                        android:textColor="@color/lightblue"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:onClick="geography"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/peach"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Geography"
+                        android:textColor="@color/lightblue"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
